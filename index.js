@@ -1,12 +1,11 @@
 $(document).ready(function () {
 
-	// get current height of page
+	// Old solution: get current height of page
 	var body = document.body;
     var html = document.documentElement;
 	var total_height = Math.max( body.scrollHeight, body.offsetHeight, 
 		html.clientHeight, html.scrollHeight, html.offsetHeight );
-	
-	$(".menu-overlay").css("height", total_height);
+	// $(".menu-overlay").css("height", total_height);
 		
 	// hide mobile nav elements
 	$(".menu-overlay").css("display", "none");
